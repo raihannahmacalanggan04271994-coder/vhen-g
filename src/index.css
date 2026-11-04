@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Glassmorphism Card Style matching the screenshot */
+.hero-glass-card {
+  background: linear-gradient(180deg, rgba(16, 28, 48, 0.85) 0%, rgba(8, 16, 28, 0.95) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.hero-glass-card-gold {
+  background: linear-gradient(180deg, rgba(35, 27, 14, 0.85) 0%, rgba(18, 13, 7, 0.95) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45), inset 0 1px 0 0 rgba(251, 191, 36, 0.15);
+}
+
+.hero-glow-cyan {
+  text-shadow: 0 0 12px rgba(6, 182, 212, 0.65), 0 0 24px rgba(6, 182, 212, 0.35);
+}
+
+.hero-glow-gold {
+  text-shadow: 0 0 12px rgba(245, 158, 11, 0.65), 0 0 24px rgba(245, 158, 11, 0.35);
+}
+
+.hero-btn-primary {
+  background: linear-gradient(180deg, #1d4ed8 0%, #0369a1 100%);
+  border: 1px solid #38bdf8;
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.hero-btn-primary:hover {
+  background: linear-gradient(180deg, #2563eb 0%, #0284c7 100%);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.hero-btn-gold {
+  background: linear-gradient(180deg, #d97706 0%, #b45309 100%);
+  border: 1px solid #fbbf24;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.hero-btn-gold:hover {
+  background: linear-gradient(180deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060d17;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.92; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}

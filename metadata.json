@@ -1,0 +1,6 @@
+{
+  "name": "Avatar Legends Investment & Hourly Payout Platform",
+  "description": "Gamified hourly yield investment platform featuring Mobile Legends characters, real-time income tracking, automated Instapay payouts, GCash/Maya withdrawal gateway, hero roster, and skin boosters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
